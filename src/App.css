@@ -1,10 +1,15 @@
+/* General styles for all screen sizes */
+* {
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
   background-color: #fcf1f3;
 }
 
 .App-header {
-  padding: 20px;
+  background-color: #3ab4ff;
 }
 
 .App-logo {
@@ -16,25 +21,100 @@
 }
 
 .App-line {
-  border-top: 1px solid #f300a3; /* This sets the line color and style */
-  margin: 10px 0; /* Adjust the margin to control the spacing above and below the line */
+  border-top: 1px solid #f300a3;
 }
 
 .App-body {
-  height: 100vh; /* Set the height to 100% of the viewport's height */
   padding: 20px;
 }
 
+.App-heading {
+  color: #f300a3;
+  margin: 20px 0;
+}
+
 .character-app-container {
+  /* From https://css.glass */
+  margin: 30px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  background: rgba(243, 0, 163, 0.27);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border: 1px solid #f300a3;
 }
+
+.character-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .character-image {
   object-fit: cover;
-  width: 400px;
+  border-radius: 50%;
+  width: 600px;
+  height: 700px;
 }
+
+.character-name {
+  height: 50px;
+  color: #f300a3;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
 .start-button {
+  border: none;
+  color: white;
+  margin: 50px auto;
   background-color: #f300a3;
-  padding: 20px 35px 20px 35px;
+  padding: 20px 50px;
   font-size: larger;
   border-radius: 30px;
+  width: 600px;
+}
+
+.footer-container {
+  background-color: #3ab4ff;
+  color: #f300a3;
+  height: 100px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container a {
+  all: unset;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Media query for mobile devices with a maximum width of 768 pixels */
+@media (max-width: 768px) {
+  .App-body {
+    height: auto;
+    padding: 0;
+  }
+
+  .character-image {
+    width: 300px;
+    height: 350px;
+  }
+
+  .start-button {
+    padding: 15px 30px; /* Adjust button padding for better mobile layout */
+    width: 250px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
 }
