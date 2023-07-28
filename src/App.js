@@ -12,7 +12,7 @@ function App() {
     setRandomBarbie(barbieData[randomIndex]);
     setShowConfetti(true);
   };
- const buttonText = randomBarbie ? "Try Again" : "Start";
+  const buttonText = randomBarbie ? "Try Again" : "Start";
   return (
     <div className="App">
       <header className="App-header">
@@ -33,7 +33,7 @@ function App() {
               <img
                 className="character-image"
                 src="./images/placeholder-barbie.png"
-                alt="placeholder photo of barbie with pink ponytale"
+                alt="barbie with pink ponytale"
               />
               <h2 className="character-name">
                 Welcome to Barbie Land, where you can be Barbie (or Ken)
@@ -62,6 +62,7 @@ function App() {
         <a
           href="https://www.linkedin.com/in/nataliia-zablotska/"
           target="_blank"
+          rel="noreferrer"
         >
           LinkedIn
         </a>
