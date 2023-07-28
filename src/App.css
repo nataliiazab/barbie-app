@@ -1,38 +1,40 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: #fcf1f3;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.App-logo {
+  pointer-events: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Barbie-logo {
+  width: 200px;
+}
+
+.App-line {
+  border-top: 1px solid #f300a3; /* This sets the line color and style */
+  margin: 10px 0; /* Adjust the margin to control the spacing above and below the line */
+}
+
+.App-body {
+  height: 100vh; /* Set the height to 100% of the viewport's height */
+  padding: 20px;
+}
+
+.character-app-container {
+  border: 1px solid #f300a3;
+}
+.character-image {
+  object-fit: cover;
+  width: 400px;
+}
+.start-button {
+  background-color: #f300a3;
+  padding: 20px 35px 20px 35px;
+  font-size: larger;
+  border-radius: 30px;
 }
