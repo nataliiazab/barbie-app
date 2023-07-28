@@ -12,7 +12,7 @@ function App() {
     setRandomBarbie(barbieData[randomIndex]);
     setShowConfetti(true);
   };
-
+ const buttonText = randomBarbie ? "Try Again" : "Start";
   return (
     <div className="App">
       <header className="App-header">
@@ -54,9 +54,8 @@ function App() {
           )}
         </div>
         <button className="start-button" onClick={handleStartButtonClick}>
-          Start
+          {buttonText}
         </button>
-        {showConfetti && <Confetti recycle={false} numberOfPieces={100} />}
       </body>
       <footer className="footer-container">
         © Developed by Natalie Zablotska -&nbsp;{" "}
@@ -67,6 +66,14 @@ function App() {
           LinkedIn
         </a>
       </footer>
+      {showConfetti && (
+        <Confetti
+          recycle={false}
+          numberOfPieces={700}
+          colors={["#f300a3"]}
+          gravity={0.3}
+        />
+      )}
     </div>
   );
 }
