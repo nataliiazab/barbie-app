@@ -2,145 +2,173 @@
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/e294e5650208/sub-buzz-636-1680616997-1.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Another Ken in Barbieland",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": [
+      "Playing sports",
+      "going to the beach",
+      "hanging out with friends"
+    ],
+    "Personal traits": ["Confident", "outgoing", "athletic"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/e294e5650208/sub-buzz-640-1680617129-5.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Gloria, a HUMAN, not a Barbie",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": ["Reading", "writing", "spending time with her family"],
+    "Personal traits": ["Kind", "compassionate", "intelligent"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/44e839981fad/sub-buzz-648-1680617191-5.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Barbie who is always in the splits",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": ["Ballet", "gymnastics", "dancing"],
+    "Personal traits": ["Flexible", "athletic", "graceful"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/2bcbe903fb97/sub-buzz-1718-1680617079-1.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "President Barbie",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": ["Reading", "writing", "meeting with world leaders"],
+    "Personal traits": ["Intelligent", "compassionate", "strong-willed"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/2bcbe903fb97/sub-buzz-1722-1680617297-4.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "The Narrator of the Barbie film",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": ["Reading", "writing", "telling stories"],
+    "Personal traits": ["Creative", "imaginative", "witty"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/91858abe2c53/sub-buzz-2303-1680616980-6.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "The CEO of Mattel",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": ["Playing golf", "traveling", "spending time with family"],
+    "Personal traits": ["Driven", "ambitious", "successful"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/cd7578f70e3a/sub-buzz-912-1680617061-1.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Allan, and there's apparently only one of him",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": ["Hiking", "camping", "fishing"],
+    "Personal traits": ["Independent", "adventurous", "resourceful"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/2bcbe903fb97/sub-buzz-1718-1680617106-3.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Sasha, another human",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": ["Playing the guitar", "singing", "writing songs"],
+    "Personal traits": ["Creative", "passionate", "artistic"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/91858abe2c53/sub-buzz-2314-1680617118-3.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Judge Barbie",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": ["Reading", "writing", "volunteering"],
+    "Personal traits": ["Fair", "just", "intelligent"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/3649f02a4d03/sub-buzz-5137-1680617093-3.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Physicist Barbie",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": ["Reading", "writing", "researching"],
+    "Personal traits": ["Intelligent", "curious", "driven"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/91858abe2c53/sub-buzz-2314-1680617086-1.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Doctor Barbie",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": ["Reading", "writing", "volunteering"],
+    "Personal traits": ["Compassionate", "caring", "intelligent"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/cd7578f70e3a/sub-buzz-912-1680617124-3.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Writer Barbie",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": ["Reading", "writing", "traveling"],
+    "Personal traits": ["Creative", "imaginative", "intelligent"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/3649f02a4d03/sub-buzz-5137-1680617073-1.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Ken",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": [
+      "Playing sports",
+      "hanging out with friends",
+      "going to the movies"
+    ],
+    "Personal traits": ["Confident", "outgoing", "athletic"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/91858abe2c53/sub-buzz-2318-1680617051-1.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Ken, who apparently loves to play music",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": ["Playing guitar", "singing", "writing songs"],
+    "Personal traits": ["Creative", "passionate", "musical"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/44e839981fad/sub-buzz-656-1680617340-1.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Ken",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": [
+      "Playing sports",
+      "hanging out with friends",
+      "going to the movies"
+    ],
+    "Personal traits": ["Confident", "outgoing", "athletic"]
   },
   {
-    "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/e294e5650208/sub-buzz-640-1680617066-3.jpg?downsize=600:*&output-format=auto&output-quality=auto",
+    "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/e294e5650208/sub-buzz-636-1680617100-3.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Mattel employee",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": [
+      "Playing video games",
+      "watching movies",
+      "hanging out with friends"
+    ],
+    "Personal traits": ["Hardworking", "dedicated", "creative"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/9edfb05b4334/sub-buzz-1900-1680617113-1.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Aaron, a low-level intern working for Mattel",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": [
+      "Playing video games",
+      "watching movies",
+      "hanging out with friends"
+    ],
+    "Personal traits": ["Ambitious", "hardworking", "eager to learn"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/5e0aee7c6893/sub-buzz-935-1680617003-2.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Lawyer Barbie",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": ["Reading", "writing", "volunteering"],
+    "Personal traits": ["Fair", "just", "intelligent"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/44e839981fad/sub-buzz-648-1680617033-2.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Diplomat Barbie",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": [
+      "Traveling",
+      "meeting new people",
+      "learning about different cultures"
+    ],
+    "Personal traits": ["Intelligent", "compassionate", "diplomatic"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/cd7578f70e3a/sub-buzz-905-1680617026-2.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Journalist Barbie",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": ["Reading", "writing", "interviewing people"],
+    "Personal traits": ["Intelligent", "curious", "driven"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/cd7578f70e3a/sub-buzz-925-1680617272-1.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Midge, the Barbie's best friend",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": ["Shopping", "going to the movies", "hanging out with friends"],
+    "Personal traits": ["Kind", "compassionate", "loyal"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/e294e5650208/sub-buzz-636-1680617100-3.jpg?downsize=600:*&output-format=auto&output-quality=auto",
     "name": "Mermaid Barbie with blue hair",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": ["Swimming", "exploring the ocean", "collecting seashells"],
+    "Personal traits": ["Kind", "compassionate", "adventurous"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/e294e5650208/sub-buzz-640-1680617042-1.jpg?output-format=auto&output-quality=auto",
     "name": "The Barbie",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": ["Shopping", "going to the movies", "hanging out with friends"],
+    "Personal traits": ["Kind", "compassionate", "stylish"]
   },
   {
     "link": "https://img.buzzfeed.com/buzzfeed-static/static/2023-04/4/14/asset/d2d227ff5192/sub-buzz-415-1680617457-1.jpg?output-format=auto&output-quality=auto",
     "name": "Just Ken",
-    "Hobbies": "",
-    "Personal traits": ""
+    "Hobbies": [
+      "Playing sports",
+      "hanging out with friends",
+      "going to the movies"
+    ],
+    "Personal traits": ["Confident", "outgoing", "athletic"]
   }
 ]

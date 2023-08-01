@@ -6,13 +6,44 @@ import Confetti from "react-confetti";
 function App() {
   const [randomBarbie, setRandomBarbie] = useState(null);
   const [showConfetti, setShowConfetti] = useState(false);
+  const [showTest, setShowTest] = useState(false);
+  const [userResponses, setUserResponses] = useState({
+    sports: null,
+    creative: null,
+    caring: null,
+  });
 
   const handleStartButtonClick = () => {
-    const randomIndex = Math.floor(Math.random() * barbieData.length);
-    setRandomBarbie(barbieData[randomIndex]);
-    setShowConfetti(true);
+    setUserResponses({
+      sports: null,
+      creative: null,
+      caring: null,
+    }); // Reset user responses when starting the test
+    setShowTest(true); // Show the test component after clicking the "Start" button
   };
+
+  const handleTestResponse = (question, response) => {
+    // Process the user's response to the test here
+    const updatedResponses = { ...userResponses, [question]: response };
+    setUserResponses(updatedResponses);
+
+    // Check if all three responses have been collected
+    const allResponsesCollected =
+      updatedResponses.sports !== null &&
+      updatedResponses.creative !== null &&
+      updatedResponses.caring !== null;
+
+    if (allResponsesCollected) {
+      // All responses collected, proceed with displaying the result
+      const randomIndex = Math.floor(Math.random() * barbieData.length);
+      setRandomBarbie(barbieData[randomIndex]);
+      setShowConfetti(true);
+      setShowTest(false); // Hide the test component after answering
+    }
+  };
+
   const buttonText = randomBarbie ? "Try Again" : "Start";
+
   return (
     <div className="App">
       <header className="App-header">
@@ -28,34 +59,38 @@ function App() {
           If You Were a Barbie Movie Character, Who Would You Be?
         </h1>
         <div className="character-app-container">
-          {!randomBarbie ? ( // Display placeholder photo if randomBarbie is null
+          {!showTest && !randomBarbie && (
+            // Display placeholder photo if test is not shown and randomBarbie is null
             <div className="character-item">
               <img
                 className="character-image"
                 src="./images/placeholder-barbie.png"
-                alt="barbie with pink ponytale"
+                alt="barbie with pink ponytail"
               />
               <h2 className="character-name">
                 Welcome to Barbie Land, where you can be Barbie (or Ken)
               </h2>
             </div>
-          ) : (
-            // Display the selected randomBarbie if it's not null
+          )}
+          {showTest && <TestComponent onTestResponse={handleTestResponse} />}
+          {!showTest && randomBarbie && (
+            // Display the selected randomBarbie if it's not null and the test is not shown
             <div className="character-item">
               <img
                 className="character-image"
                 src={randomBarbie.link}
                 alt={randomBarbie.name}
               />
-              <h2 className="character-name">
-                {randomBarbie.name}
-              </h2>
+              <h2 className="character-name">{randomBarbie.name}</h2>
             </div>
           )}
         </div>
-        <button className="start-button" onClick={handleStartButtonClick}>
-          {buttonText}
-        </button>
+        {!showTest && (
+          // Render the "Start" button if the test is not shown
+          <button className="start-button" onClick={handleStartButtonClick}>
+            {buttonText}
+          </button>
+        )}
       </body>
       <footer className="footer-container">
         © Developed by Natalie Zablotska -&nbsp;{" "}
@@ -75,6 +110,64 @@ function App() {
           gravity={0.3}
         />
       )}
+    </div>
+  );
+}
+
+// TestComponent to be shown after clicking the "Start" button
+function TestComponent({ onTestResponse }) {
+  const handleResponse = (question, response) => {
+    // Handle the user's response to the test and pass it to the onTestResponse function
+    onTestResponse(question, response);
+  };
+
+  return (
+    <div className="test-container">
+      <h2>
+        Are you more into sports and physical activities?
+      </h2>
+      <button
+        className="answer-button"
+        onClick={() => handleResponse("sports", "yes")}
+      >
+        Yes
+      </button>
+      <button
+        className="answer-button"
+        onClick={() => handleResponse("sports", "no")}
+      >
+        No
+      </button>
+
+      <h2>Do you enjoy creative and artistic activities?</h2>
+      <button
+        className="answer-button"
+        onClick={() => handleResponse("creative", "yes")}
+      >
+        Yes
+      </button>
+      <button
+        className="answer-button"
+        onClick={() => handleResponse("creative", "no")}
+      >
+        No
+      </button>
+
+      <h2>
+      Are you interested in helping and caring for others?
+      </h2>
+      <button
+        className="answer-button"
+        onClick={() => handleResponse("caring", "yes")}
+      >
+        Yes
+      </button>
+      <button
+        className="answer-button"
+        onClick={() => handleResponse("caring", "no")}
+      >
+        No
+      </button>
     </div>
   );
 }
