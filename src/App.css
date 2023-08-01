@@ -30,7 +30,7 @@
 }
 
 .App-heading {
-  color: #f300a3;
+  color: white;
   margin: 15px 0;
 }
 
@@ -68,7 +68,6 @@
   color: #f300a3;
   font-size: 20px;
   margin-top: 20px;
-
 }
 
 .start-button {
@@ -80,7 +79,7 @@
   font-size: 20px;
   border-radius: 30px;
   width: 400px;
-    border: 2px solid rgba(255, 255, 255, 0.59);
+  border: 2px solid rgba(255, 255, 255, 0.59);
 }
 
 .footer-container {
