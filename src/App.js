@@ -126,7 +126,7 @@ function TestComponent({ onTestResponse }) {
 
   return (
     <div className="test-container">
-      <h2>Are you more into sports and physical activities?</h2>
+      <h2>Are you into sports and physical activities?</h2>
       <button
         className="answer-button"
         onClick={() => handleResponse("sports", "yes")}
