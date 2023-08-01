@@ -48,7 +48,7 @@ function App() {
                 alt={randomBarbie.name}
               />
               <h2 className="character-name">
-                You would be {randomBarbie.name}
+                {randomBarbie.name}
               </h2>
             </div>
           )}
