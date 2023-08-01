@@ -12,7 +12,9 @@ function App() {
     creative: null,
     caring: null,
   });
-
+  const handleLogoClick = () => {
+    window.location.reload();
+  };
   const handleStartButtonClick = () => {
     setUserResponses({
       sports: null,
@@ -23,11 +25,11 @@ function App() {
   };
 
   const handleTestResponse = (question, response) => {
-    // Process the user's response to the test here
+    // user's response to the test 
     const updatedResponses = { ...userResponses, [question]: response };
     setUserResponses(updatedResponses);
 
-    // Check if all three responses have been collected
+    // To check if all three responses have been collected
     const allResponsesCollected =
       updatedResponses.sports !== null &&
       updatedResponses.creative !== null &&
@@ -51,6 +53,7 @@ function App() {
           className="Barbie-logo"
           src="/images/Barbie_Logo.svg.webp"
           alt="Barbie Logo"
+          onClick={handleLogoClick}
         />
       </header>
       <div className="App-line"></div>
@@ -123,9 +126,7 @@ function TestComponent({ onTestResponse }) {
 
   return (
     <div className="test-container">
-      <h2>
-        Are you more into sports and physical activities?
-      </h2>
+      <h2>Are you more into sports and physical activities?</h2>
       <button
         className="answer-button"
         onClick={() => handleResponse("sports", "yes")}
@@ -153,9 +154,7 @@ function TestComponent({ onTestResponse }) {
         No
       </button>
 
-      <h2>
-      Are you interested in helping and caring for others?
-      </h2>
+      <h2>Are you interested in helping and caring for others?</h2>
       <button
         className="answer-button"
         onClick={() => handleResponse("caring", "yes")}
