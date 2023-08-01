@@ -31,7 +31,7 @@
 
 .App-heading {
   color: white;
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
 .character-app-container {
@@ -44,7 +44,7 @@
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.59);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 11px 14px 12px -4px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.9px);
   -webkit-backdrop-filter: blur(2.9px);
   border: 1px solid rgba(255, 255, 255, 0.41);
@@ -61,6 +61,7 @@
   border-radius: 50%;
   width: 500px;
   height: 500px;
+  border: 3px solid white;
 }
 
 .character-name {
