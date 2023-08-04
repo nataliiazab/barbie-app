@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import barbieData from "./barbie_photos.json";
 import Confetti from "react-confetti";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function App() {
   const [randomBarbie, setRandomBarbie] = useState(null);
@@ -27,7 +28,7 @@ function App() {
   };
 
   const handleTestResponse = (question, response) => {
-    // user's response to the test 
+    // user's response to the test
     const updatedResponses = { ...userResponses, [question]: response };
     setUserResponses(updatedResponses);
 
@@ -98,16 +99,23 @@ function App() {
         )}
       </body>
       <footer className="footer-container">
-        © Developed by Natalie Zablotska -&nbsp;{" "}
-        <a
-          href="https://www.linkedin.com/in/nataliia-zablotska/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          LinkedIn
-        </a>
-
-        
+        <div className="footer-text">© Developed by Natalie Zablotska</div>
+        <div className="social-icons">
+          <a
+            href="https://www.linkedin.com/in/nataliia-zablotska/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedin className="icon" />
+          </a>
+          <a
+            href="https://github.com/nataliiazab"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub className="icon" />
+          </a>
+        </div>
       </footer>
       {showConfetti && (
         <Confetti
