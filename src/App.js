@@ -143,20 +143,7 @@ function TestComponent({ onTestResponse }) {
     // Toggle the "clicked" class on the clicked button
     event.target.classList.toggle("clicked");
   };
-const questionsData = [
-  {
-    question: "Are you into sports and physical activities?",
-    responses: ["yes", "no"],
-  },
-  {
-    question: "Do you enjoy creative and artistic activities?",
-    responses: ["yes", "no"],
-  },
-  {
-    question: "Are you interested in helping and caring for others?",
-    responses: ["yes", "no"],
-  },
-];
+
 
   
   return (
