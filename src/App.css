@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* padding and borders in element sizing */
 }
 
 .App {
@@ -85,6 +86,14 @@
   width: 400px;
   border: 2px solid rgba(255, 255, 255, 0.59);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.start-button:hover {
+  background-color: #ff71c5;
 }
 
 .answer-button {
@@ -106,7 +115,11 @@
 }
 
 .answer-button:active {
-  background-color: #d9008a;
+  background-color: #ab066e;
+}
+
+.answer-button.clicked {
+  background-color: #ab066e;
 }
 
 .test-container {
@@ -131,41 +144,41 @@
   margin: 20px 0;
 }
 
-/* Media query for mobile devices with a maximum width of 768 pixels */
 @media (max-width: 768px) {
   .App-body {
     width: 100%;
-    height: 100vh;
-    padding: 0;
+    height: auto; 
+    padding: 0 0 50px 0;
   }
+
   .character-app-container {
     width: 80%;
-    flex-direction: column; /* Stack character items vertically on small screens */
-    align-items: center; /* Center items vertically */
+    flex-direction: column; 
+    align-items: center; 
+    margin: 25px auto 10px auto; 
   }
   .character-image {
-    width: 100%; /* Make character images responsive */
-    max-width: 300px; /* Limit the maximum width of character images */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 2px solid white;
   }
 
   .character-name {
-    font-size: 16px; /* Adjust font size for character names on small screens */
+    font-size: 16px;
+    margin-top: 10px;
   }
 
   .start-button {
-    width: 100%; /* Make start button full width on small screens */
-  }
-
-  .footer-container {
-    margin-top: 50px;
-    flex-direction: column;
+    width: 100%;
+    padding: 15px 30px;
+    font-size: 18px;
   }
 
   .test-container {
     width: 90%;
     padding: 15px;
-    margin-bottom: 30px; /* Add space between test-container and footer */
+    margin-bottom: 20px;
   }
 
   .test-container h2 {
@@ -173,10 +186,18 @@
   }
 
   .test-container .answer-button {
-    width: 100%; /* Make answer buttons full width on small screens */
-    max-width: 200px; /* Limit the maximum width of answer buttons */
-    padding: 10px 20px; /* Adjust padding for answer buttons on small screens */
-    font-size: 0.9rem;
+    width: 100%;
+    max-width: 180px;
+    padding: 8px 15px;
+    font-size: 0.85rem;
+  }
+
+  .footer-container {
+    margin-top: 30px;
+  }
+
+  .footer-text {
+    margin-bottom: 5px;
   }
 }
 
@@ -203,8 +224,4 @@
 }
 .icon {
   color: white;
-}
-
-.answer-button.clicked {
-  background-color: #ab066e; /* Change the color to the desired clicked color */
 }
