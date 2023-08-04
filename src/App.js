@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import barbieData from "./barbie_photos.json";
 import Confetti from "react-confetti";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaSync } from "react-icons/fa";
 
 function App() {
   const [randomBarbie, setRandomBarbie] = useState(null);
@@ -47,7 +47,13 @@ function App() {
     }
   };
 
-  const buttonText = randomBarbie ? "Try Again" : "Start";
+ const buttonText = randomBarbie ? (
+   <>
+     Try Again <FaSync />
+   </>
+ ) : (
+   "Start"
+ );
 
   return (
     <div className="App">
