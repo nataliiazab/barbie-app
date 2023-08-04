@@ -195,3 +195,7 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+.answer-button.clicked {
+  background-color: #ab066e; /* Change the color to the desired clicked color */
+}

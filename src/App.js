@@ -104,6 +104,8 @@ function App() {
         >
           LinkedIn
         </a>
+
+        
       </footer>
       {showConfetti && (
         <Confetti
@@ -119,9 +121,11 @@ function App() {
 
 // TestComponent to be shown after clicking the "Start" button
 function TestComponent({ onTestResponse }) {
-  const handleResponse = (question, response) => {
-    // Handle the user's response to the test and pass it to the onTestResponse function
+  const handleResponse = (question, response, event) => {
     onTestResponse(question, response);
+
+    // Toggle the "clicked" class on the clicked button
+    event.target.classList.toggle("clicked");
   };
 
   return (
@@ -129,13 +133,13 @@ function TestComponent({ onTestResponse }) {
       <h2>Are you into sports and physical activities?</h2>
       <button
         className="answer-button"
-        onClick={() => handleResponse("sports", "yes")}
+        onClick={(event) => handleResponse("sports", "yes", event)}
       >
         Yes
       </button>
       <button
         className="answer-button"
-        onClick={() => handleResponse("sports", "no")}
+        onClick={(event) => handleResponse("sports", "no", event)}
       >
         No
       </button>
@@ -143,13 +147,13 @@ function TestComponent({ onTestResponse }) {
       <h2>Do you enjoy creative and artistic activities?</h2>
       <button
         className="answer-button"
-        onClick={() => handleResponse("creative", "yes")}
+        onClick={(event) => handleResponse("creative", "yes", event)}
       >
         Yes
       </button>
       <button
         className="answer-button"
-        onClick={() => handleResponse("creative", "no")}
+        onClick={(event) => handleResponse("creative", "no", event)}
       >
         No
       </button>
@@ -157,13 +161,13 @@ function TestComponent({ onTestResponse }) {
       <h2>Are you interested in helping and caring for others?</h2>
       <button
         className="answer-button"
-        onClick={() => handleResponse("caring", "yes")}
+        onClick={(event) => handleResponse("caring", "yes", event)}
       >
         Yes
       </button>
       <button
         className="answer-button"
-        onClick={() => handleResponse("caring", "no")}
+        onClick={(event) => handleResponse("caring", "no", event)}
       >
         No
       </button>
