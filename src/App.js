@@ -13,9 +13,11 @@ function App() {
     caring: null,
   });
   const handleLogoClick = () => {
+    setShowConfetti(true); // Reset confetti display
     window.location.reload();
   };
   const handleStartButtonClick = () => {
+    setShowConfetti(false); // Reset confetti display
     setUserResponses({
       sports: null,
       creative: null,
