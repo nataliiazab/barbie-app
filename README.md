@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+## Barbie Movie Character Quiz App
+Welcome to the Barbie Movie Character Test App! This app allows you to discover which Barbie movie character you would be based on your responses to a few questions. The app presents a series of questions and determines the most suitable character for you. Get ready to explore the world of Barbie and find out your perfect match!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![barbie-app](https://github.com/nataliiazab/barbie-app/assets/113237479/440eb7eb-5fb6-4fe3-9138-66480bdb83fa)
 
-## Available Scripts
 
-In the project directory, you can run:
+## How to Use
+Click on the Barbie logo in the header to refresh the app and start the test again.
 
-### `npm start`
+Click the "Start" button to begin the test. You will be presented with a series of questions related to sports, creativity, and caring for others.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Answer each question by clicking on the corresponding "Yes" or "No" button.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+After completing all the questions, the app will match you with a Barbie movie character that best aligns with your responses.
 
-### `npm test`
+Enjoy a confetti celebration when your character match is revealed!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
+React: A JavaScript library for building user interfaces.
 
-### `npm run build`
+react-icons: Provides a set of easily accessible icons for use in your React applications.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Confetti: A component to create a confetti celebration effect.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## About the Developer
+This app was developed by [Natalie Zablotska](https://www.linkedin.com/in/nataliia-zablotska/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for using the Barbie Movie Character Test App! Discover your inner Barbie movie character and have fun exploring different personality traits. If you have any questions or feedback, feel free to reach out to the developer.
