@@ -20,6 +20,7 @@
 
 .Barbie-logo {
   width: 200px;
+  margin: 20px 0;
 }
 
 .App-line {
@@ -97,7 +98,6 @@
 }
 
 .answer-button {
-  border: none;
   color: white;
   margin: 0 auto 25px auto;
   background-color: #f300a3;
@@ -108,18 +108,30 @@
   width: 200px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border: 2px solid #f300a3;
+}
+
+.second-answer-button {
+  background-color: white;
+  color: #f300a3;
+  border: 2px solid #f300a3;
 }
 
 .answer-button:hover {
-  background-color: #ff71c5;
+  background-color: #ab066e;
+  color: white;
 }
 
 .answer-button:active {
   background-color: #ab066e;
+  color: white;
+  border: 2px solid #ab066e;
 }
 
 .answer-button.clicked {
   background-color: #ab066e;
+  color: white;
+  border: 2px solid #ab066e;
 }
 
 .test-container {

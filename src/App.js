@@ -156,7 +156,7 @@ function TestComponent({ onTestResponse }) {
         Yes
       </button>
       <button
-        className="answer-button"
+        className="answer-button second-answer-button"
         onClick={(event) => handleResponse("sports", "no", event)}
       >
         No
@@ -170,7 +170,7 @@ function TestComponent({ onTestResponse }) {
         Yes
       </button>
       <button
-        className="answer-button"
+        className="answer-button second-answer-button"
         onClick={(event) => handleResponse("creative", "no", event)}
       >
         No
@@ -184,7 +184,7 @@ function TestComponent({ onTestResponse }) {
         Yes
       </button>
       <button
-        className="answer-button"
+        className="answer-button second-answer-button"
         onClick={(event) => handleResponse("caring", "no", event)}
       >
         No
