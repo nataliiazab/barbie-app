@@ -40,20 +40,23 @@ function App() {
 
     if (allResponsesCollected) {
       // All responses collected, proceed with displaying the result
+
+      //change this to a logic rather than random function
       const randomIndex = Math.floor(Math.random() * barbieData.length);
+
       setRandomBarbie(barbieData[randomIndex]);
       setShowConfetti(true);
       setShowTest(false); // Hide the test component after answering
     }
   };
 
- const buttonText = randomBarbie ? (
-   <>
-     Try Again <FaSync />
-   </>
- ) : (
-   "Start"
- );
+  const buttonText = randomBarbie ? (
+    <>
+      Try Again <FaSync />
+    </>
+  ) : (
+    "Start"
+  );
 
   return (
     <div className="App">
@@ -144,8 +147,6 @@ function TestComponent({ onTestResponse }) {
     event.target.classList.toggle("clicked");
   };
 
-
-  
   return (
     <div className="test-container">
       <h2>Are you into sports and physical activities?</h2>
