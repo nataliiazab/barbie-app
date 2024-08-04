@@ -108,7 +108,7 @@ function App() {
         )}
       </body>
       <footer className="footer-container">
-        <div className="footer-text">© Developed by Natalie Zablotska</div>
+        <div className="footer-text">© Developed by Nataliia Zablotska</div>
         <div className="social-icons">
           <a
             href="https://www.linkedin.com/in/nataliia-zablotska/"
